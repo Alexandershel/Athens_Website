@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title> The Acropolis </title>
+        <h1> <center> <font color= 00004d> The Acropolis </font color> </center> </h1>
+		<center> <img src= "AcropolisHeader.jpg" height= 250> </center> <!www.getyourguide.com>
+		<h2> <font color= 00004d> <center> <u> Hello! Welcome to your very own virtual tour of Athens. </u> </font color> </center> </h2>
+		<h2> <font color= 00004d> <center> <b> ↓  ↓  ↓  Music:  ↓  ↓  ↓ </b> </center> <font color> </h2>
+		<! Embedded Music>
+		<center>
+		<audio controls loop autoplay>
+			<source src="Greek_Music.mp3" type="audio/mp3">
+		</audio> </center>
+		<script>
+			var myImages=new Array("parthos.jpg", "parthosNight.jpg", "parthosFire.jpg",
+									"parthosHeal.jpg", "athena.jpg", "athenaLeft.jpg",
+									"parthosModel.jpg", "parthosRepN.jpg", "parthosRepB.png")
+			var newPic=0
+			
+			function chngImg()
+			{
+				newPic++
+				
+				if(newPic > 8)
+				{
+					newPic=0
+				}
+				
+				document.mypic.src=myImages[newPic]
+				return false
+			}
+			
+			var adPicture = new Array("erech.jpg", "erech1.jpg", "erech2.jpg", "erechNight.jpg",
+										"erechCary.jpg", "erechCaryMuse.jpg", "erechMod.jpg", 
+										"erechMod1.jpg")
+			var thisAd = 0
+			
+			function cycle()
+			{
+				if (document.images)
+				{
+					if (document.adPicture.complete)
+					{
+						thisAd++
+						if (thisAd == 8)
+						{
+							thisAd = 0
+						}
+						document.adPicture.src=adPicture[thisAd]
+					}
+					setTimeout("cycle()",2000)
+				}
+				setTimeout("scrollMsg()",50)
+			}
+		</script>
+	</head>
+    
+	<body bgcolor= 99b3e6 link= 00004d vlink= purple onload="cycle()">
+		<! Table of Contents>
+		<p> <b> <font size= +3> <font color= e6ecff> Navigation: </font color> </font size> </b> </p>
+		<ol>
+			<li> <a href= "#introduction"> Introduction </a> </li>
+			<li> <a href= "#parthenon"> The Parthenon </a> </li>
+			<li> <a href= "#propylaia"> The Propylaia </a> </li>
+			<li> <a href= "#erechtheion"> The Erechtheian </a> </li>
+			<li> <a href= "#temple"> The Temple of Athena Nike </a> </li>
+			<li> <a href= "SAlexander_Sources.html"> Sources </a> </li>
+			<li> <a href= "#contact"> Contact Me! </a> </li>
+		</font color> </ol>
+		
+		<! Introduction>
+		<a name= "introduction" target= "page">
+		<b> <font size= +3> <font color= e6ecff> <p> Introduction </p> </font color> </font size> </b>
+		<center> <img src= "acropolisDiagram.jpg" width= 550 height= 250> </center>
+		<font size= +1> <font color= 00004d> <p>  
+		The Acropolis is a citadel on a hill from Ancient Greece -approximately from the 5th century 
+		BCE- and is the home to many notable buildings. The Acropolis of Athens grew throughout this
+		century with influence from sculptors and Pericles, the Athenian statesman at the time. Athens 
+		became a powerful city-state after the victory against the Persians and the establishment of 
+		their democracy. The beautiful architecture was just another piece to the puzzle. With the 
+		Parthenon, the Propylaia, and much more, the city of Athens continues to be a thriving tourist
+		location with over 20 million people visiting every year.
+		</p> </font color> </font size> </a>
+			
+		<! The Parthenon>
+		<a name= "parthenon"> <b> <font size= +3> <font color= e6ecff> <p> The Parthenon </p> </font color> </font size> </b>
+		<center> <a href = "" onclick = "return chngImg()">
+		<img name = "mypic" src="parthos.jpg" border=0 height=250> </a> 
+		<h2> <font color= 00004d> <b> Click The Photo Above To Change It! </b> <font color> </h2> </center>
+		<font size= +1> <font color= 00004d> <p> The Parthenon was constructed by architects Ictinus and
+		Callicrates, and sculptor Phidias. The temple is dedicated to the goddess Athena Parthenos, hence
+		the name Parthenon. The Parthenon remained intact until the 5th century CE when the statue of
+		colossal statue of Athena was removed and the temple was converted to a Christian church. In 1458,
+		the temple was seized by the Turks and transformed into a mosque. Later, in 1687, a powder magazine
+		blew up in the center of the Parthenon when the Venetians were fighting the Turks. Most of the
+		base and structure is still intact. Most of the sculptures, unfortunately, were not saved. However,
+		there are two replicas of the Parthenon: a full-size replica in Nashville, TN and replica made out
+		of books in Germany.
+		</p> </font color> </font size> </a>
+					
+		<! The Propylaia>
+		<a name= "propylaia">
+		<b> <font size= +3> <font color= e6ecff> <p> The Propylaia </p> </font color> </font size> </b>
+		<img src= "prop.jpg" align= left width= 200 height= 140>
+		<font size= +1> <font color= 00004d> <p align= left> This monument is the official entrance to Athens. 
+		The architect, Mnesikles, started construction at the same time as the Parthenon. However, building
+		was put on hold for 5 years due to the Peloponnesian War. It is a complex structure made to impress 
+		visitors. Inside the building, the east room was home to mytholigic paintings and the west wing held
+		bronze statues in the Hellenistic era. The Propylaia was crucial to building fortifications of the 
+		citadel and was once a palace of the Franks.	
+		</p> </font color> </font size> </a>
+			
+		<! The Erechtheian>
+		<a name= "erechtheion">
+		<b> <font size= +3> <font color= e6ecff> <br> <p> The Erechtheion </p> </font color> </font size> </b>			
+		<center> <img src="erech.jpg" name="adPicture" height= 250> </center>
+		<font size= +1> <font color= 00004d> <p> The Erechtheion is a temple used for religious rituals. 
+		Construction started in 420 BCE, but, like the Propylaia, was stopped midway to a major Athenian loss 
+		in Syracuse. After this loss, Athens spiraled out-of-control: there were multiple revolts and their 
+		democracy was replaced with an oligarchy. After this string of events, building ended in 406 BCE, and 
+		just 3 years later, Athens would fall to Sparta. The Erechtheion is well designed around uneven 
+		terraign and perviously standing shrines (ex. Erechtheus, the olive tree, the tomb of Kekrops, etc.) 
+		A famous feature of this building are the Caryatids: a prostaseis (porch) supported by six female 
+		statues. On the inside of the temple, "The east end of the Erechtheion was dedicated to Athena Polias 
+		(protector of the earth and fertility) and housed the ultra-sacred wooden diipetes (fallen from the 
+		heavens) xoano (statue) of Athena." Unfortunately, we can only guess what the interior looked like 
+		because of its many renovations. The Erechtheion endured a fire, a conversion into a Christian basilica, 
+		and a conversion into a harem.
+		</p> </font color> </font size> </a>
+			
+		<! The Temple of Athena Nike>
+		<a name= "temple">
+		<b> <font size= +3> <font color= e6ecff> <p> The Temple of Athena Nike </p> </font color> </font size> </b>
+		<iframe width="475" height="250" src="https://www.youtube.com/embed/rgrLHs-g_PU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align= left></iframe>
+		<font size= +1> <font color= 00004d> <p align= left> The intial use of this temple was for the worship of deities 
+		associated with wars. Over time, these "Nike" gods and goddesses fused with the cult of Athena Nike. In 
+		a recent excavation, it was revealed that a pit existed so that Greeks used to pour libations and to 
+		deposit figurines. The statue of Athena Nike housed in the temple was made of wood and it held a 
+		pomegrade and a helmet. Fun Fact: this statue was referred to as the Apteros Nike because it had no 
+		wings (which was custom of Nike statues). This way the statue could never leave the citadel. The same 
+		year that the Parthenon was destroyed, the temple was dismantled: its stones were used to build a 
+		bastion for the Turks. It wasn't until the liberation of Greece that the stones were returned.
+		</p> </font color> </font size> </a>
+			
+		<! Contact>
+		<a name= "contact">
+		<b> <font size= +5> <font color= e6ecff> <p> <center> Contact Me! </center> </p> </font color> </font size> </b>
+		<font size= +1> <font color= 00004d> <a href= "mailto:shelby.alexander120602@gmail.com"> Email Me! </a> </font color> </font size> </a>
+		<br>
+        <center> <font size= +3> <font color= 00004d> <p> ↓  ↓ Join our Email List ↓  ↓ </p> </font color> </font size> </center>
+		<form method="post" action="mailto:shelby.alexander120602@gmail.com">
+			<p> Name: </p> <input type="text" value="" name="name" size= 40 maxlength= 120> </p>
+			<p> Email-Address: </p> <input type="text" value="" name="Email-Address" size= 40 maxlength= 50> </p>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+			
+		
+	</body>
+    
+</html>
